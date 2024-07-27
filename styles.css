@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    box-sizing:box-container;
+    
+  }
+  body{
+    font-family: 'Lato', sans-serif;
+    background-color:#eee;
+    text-align:center;
+    
+  }
+  
+  #header{
+    position:fixed;
+    width:100%;
+    background-color:#eee; 
+    display:flex;
+    justify-content: space-between;
+    align-items:center; 
+    top:0;
+  }
+   
+  h1{
+    margin-bottom:30px;
+    font-size:1.7rem; 
+  } 
+   
+   input{
+     margin-bottom:20px;
+   }
+  
+  input[type="email"]{
+    max-width:280px;
+    width:280px;
+    height:30px;
+  }
+  
+  
+   input[type="submit"]{
+     background-color:#f1c40f;
+     border: none;
+     padding:10px;
+     padding-left:20px;
+     font-weight:900;
+     font-size:1em;
+   }
+  
+  #nav-bar a{
+    text-decoration:none;
+    color:black;  
+  }
+  .nav-link{
+    margin-right:100px;
+  }
+  
+  #header-img{
+     width:350px; 
+     margin-left: 1vw;
+  }
+  
+  ul li{
+    display:inline;
+  }
+  
+  .hero{ 
+    margin-top: 80px;
+  
+  }
+   
+  .feature{
+    display: grid;
+    width: 62%;
+    grid-template-columns: 150px 1fr;
+    margin:80px auto; 
+    
+    
+  }
+  .icon{
+    color:darkorange;
+  }
+  .definition{
+    text-align:justify;
+  }
+  .definition header{
+    font-size:1.3em;
+    font-weight:700;
+  }
+  
+  #video{ 
+    width:600px; 
+    min-width:100px;
+    height:300px; 
+    min-height:50px;
+  }
+  
+  #prices{
+    display:grid;
+    width:62%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:100px auto;
+    gap:15px;
+  
+  
+  
+  }
+  .price{
+    border:solid black 1px;
+  }
+  
+  
+  .price header{
+    background-color:#ddd;
+    padding:10px;
+    font-weight:600;
+    font-size:1rem;
+    margin-bottom:20px;
+  
+  }
+   
+  .price span::before{
+    content:'$'; 
+     
+  }
+  .price div>*{
+    margin:15px 0;
+  }
+  .price span{ 
+    font-weight:700; 
+    font-size:1.5rem;
+    
+  }
+   
+   .price button{
+     border:none;
+     background-color:#f1c40f;
+     font-size:1rem;
+     padding:10px 20px;
+   }
+  
+  footer{
+    width:62%;
+    margin:0 auto; 
+    text-align:right;
+    background-color:#ddd;
+    padding:20px 10px;
+  
+  }
+  footer a{
+    text-decoration:none;
+    color:black;
+    padding: 10px;
+  
+  }
+  footer p{
+    color:#444;
+    padding-top:10px;
+    font-size:0.9rem;
+  }
+  
+  
+  @media (max-width:1030px) {  
+  
+    .nav-link{
+    margin-right: 1vw;
+  }
+   
+  }
+  
+  @media (max-width:650px) {  
+  
+     #header{
+       flex-wrap:wrap;
+       justify-content:center;
+     }
+  
+     #header-img{
+       min-width:10px;
+      
+       
+      } 
+       header ul li{
+        display:block;
+        padding:10px 0;
+      }
+    .hero{ 
+    margin-top: 150px;
+  }
+  .hero{ 
+    margin-top: 220px;
+  
+  }
+  .feature{
+    display: grid;
+    width: 62%;
+    grid-template-columns: 1fr;
+    margin:80px auto;  
+    
+    
+  }
+  
+  #prices{
+    display:grid;
+    width:62%;
+    grid-template-columns: 1fr ;
+    margin:100px auto;
+    gap:15px;
+  
+  
+  
+  }
+  
+  footer{
+    width:100%; 
+    margin:0;
+  
+  }
+  
+  footer a{ 
+    padding: 10px 0; 
+  
+  }
+  
+  #video{ 
+    width:300px; 
+    min-width:100px;
+    height:150px; 
+    min-height:50px;
+  }
+   
+  
+  }
